@@ -1,9 +1,11 @@
+
 """
-    basic index
+basic index
 """
 
 import zoom
 from zoom.browse import browse
+
 
 
 class MyView(zoom.View):
@@ -17,7 +19,8 @@ class MyView(zoom.View):
 
     def chart(self):
         """Chart page"""
-        content = 'Chart for Zoom data'
+
+        content = 'Hello!'
         return zoom.page(
             content.format(app=zoom.system.request.app),
             title='Zoom Chart',
